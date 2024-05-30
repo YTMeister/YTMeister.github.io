@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman</title>
+
+    <script defer src="ghost.js"></script>
+    <script defer src="pacman.js"></script>
+    <script defer src="game.js"></script>
+</head>
+
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .game__window {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100vw;
+        height: 100vh
+    }
+
+    .game__window canvas {
+        height: 100%;
+        width: 100%;
+        aspect-ratio: unset;
+        object-fit: contain;
+    }
+</style>
+
+<body>
+    <div class="game__window">
+        <canvas id="canvas" width="500" height="500" style="width: 100vw;height: 100vh;aspect-ratio: unset;object-fit: contain;margin: 0;padding: 0;"></canvas>
+
+        <div style="display:none;">
+            <img id="animation" src="animations.gif" width="140" height="20">
+            <img id="ghosts" src="ghost.png" width="140" height="20">
+        </div>
+    </div>
+</body>
+
+</html>
